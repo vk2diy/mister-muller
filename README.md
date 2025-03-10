@@ -41,7 +41,17 @@ I twisted the motor coil pairs before soldering so that crosstalk would be minim
 
 #### Power supply
 
-I found an existing AC220V to DC24V power supply capable of outputting 5A which should be more than enough to run the system.
+I found an existing AC220V to DC24V power supply lying around that was capable of outputting 5A which should be more than enough to run the system. It probably came from an old screen or appliance.
+
+#### Replacement spindle motor
+
+For the replacement motor, I obtained the [XD-3420](https://www.amazon.com.au/dp/B0B21YW465) (AUD$27).
+
+At 24V this is supposed to be 7000RPM, draw 0.5A of current, and provide 2kgf.cm. This should be fine.
+
+Relatively high end CNC systems like to advertise 'high speed machining' (HSM) which is a great way to get through metal faster under certain conditions, however most of even these systems max out at something like 12K-20K RPM. So 7K is quite alright. The cutting tool, work holding, tool path, feed rate, and frankly CNC programmer knowledge are probably more important than the raw spindle speed.
+
+Additionally, the motor may be powered in reverse to obtain CCW rotation, although it is unlikely we will actually reverse the spindle as this is probably reasonably characterized as a fairly complex and relatively uncommon feature for an entry level CNC machine for a variety of reasons including electronic impact, safety considerations for low end chucks and collets, and milling process concerns.
 
 #### Spindle control
 

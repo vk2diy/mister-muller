@@ -39,6 +39,8 @@ Annoyingly, the board was designed for JST XH standard plugs as input and my mot
 
 I twisted the motor coil pairs before soldering so that crosstalk would be minimized.
 
+Because the connections were quite fiddly, it was necessary to buy a 'third hand' soldering tool to help hold the wire in place during the operation.
+
 #### Power supply
 
 I found an existing AC220V to DC24V power supply lying around that was capable of outputting 5A which should be more than enough to run the system. It probably came from an old screen or appliance.
@@ -75,3 +77,10 @@ This indeed worked and verified at least that we were getting 24V out and that t
 
 To get the status a bit cleaner on startup it may be necessary to short the temperature sensor inputs to ground, this could be tried next.
 
+## Characterization
+
+After resolving the three axes and ensuring they all worked fine, the various axis limits were marked and the total travel per axis measured.
+
+The results were X axis 235mm, Y axis 500mm and Z axis 55mm. Bed clearance is 64mm.
+
+Spindle type is ER11 with maximum 7mm collett.
